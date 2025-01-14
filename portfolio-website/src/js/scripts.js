@@ -45,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Parallax effect for header
     globalThis.addEventListener('scroll', function() {
         const header = document.querySelector('header');
-        header.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
+        header.style.backgroundPositionY = `${globalThis.scrollY * 0.5}px`;
     });
 });
