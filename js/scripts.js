@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, options);
-
+    
     sections.forEach(section => {
         observer.observe(section);
     });
-
+    
     // Parallax effect for header
-    window.addEventListener('scroll', function() {
+    globalThis.addEventListener('scroll', function() {
         const header = document.querySelector('header');
-        header.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
+        header.style.backgroundPositionY = `${globalThis.scrollY * 0.5}px`;
     });
 });
