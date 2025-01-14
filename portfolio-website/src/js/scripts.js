@@ -1,3 +1,6 @@
+// This file contains JavaScript code for the portfolio webpage.
+// Add functionality for interactive elements, such as navigation, animations, or form handling.
+
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -15,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            // Handle form submission logic here
             alert('Form submitted!');
         });
     }
@@ -39,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Parallax effect for header
-    globalThis.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
-        header.style.backgroundPositionY = `${globalThis.scrollY * 0.5}px`;
+        header.style.backgroundPositionY = `${window.scrollY * 0.5}px`;
     });
 });
